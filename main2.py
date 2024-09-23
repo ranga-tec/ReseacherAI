@@ -5,10 +5,8 @@ from io import StringIO
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
-
 from pydantic import BaseModel, Field
 from typing import Type
-
 from langchain.agents import Tool, AgentExecutor
 from langchain.prompts import PromptTemplate, ChatPromptTemplate
 from langchain_openai import ChatOpenAI
